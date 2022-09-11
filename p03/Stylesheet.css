@@ -1,7 +1,5 @@
-
 h2{
     color: black;
-    font-family: Times New roman;
 }
 body{
     background-color: pink;
@@ -12,5 +10,5 @@ table{
     font-family: Calibri;
 }
 .zz{
-    background-color: mintcream;
+    background-color: rgb(176, 176, 243);
 }
