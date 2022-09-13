@@ -1,0 +1,135 @@
+<h1>The Top 10 Of My Best Friend</h1>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<style>
+	td{
+		background: #f7afd3;
+		cursor: pointer;
+		transition: .2s;
+	}
+
+	td:hover{
+		background: #fab7e6;
+	}
+	.tabelku {
+		width: 120%;
+		max-width: 800px;
+	}
+</style>
+<table class="tabelku">
+	<tr>
+		<td>No</td>
+		<td>Nama</td>
+		<td>Alamat</td>
+		<td>Aksi</td>
+	</tr>
+	<tr id="row__1">
+		<td>1</td>
+		<td class="nama_student">Ayi Andini</td>
+		<td class="address">Majalengka</td>
+		<td class="hapus" id="hapus__1">Hapus</td>
+	</tr>
+	<tr id="row__2">
+		<td>2</td>
+		<td class="nama_student">Fany Septiyany</td>
+		<td class="address">Kuningan</td>
+		<td class="hapus" id="hapus__2">Hapus</td>
+	</tr>
+	<tr id="row__3">
+		<td>3</td>
+		<td class="nama_student">Aulia Agustina Sri Maharani</td>
+		<td class="address">Kuningan</td>
+		<td class="hapus" id="hapus__3">Hapus</td>
+	</tr>
+	<tr id="row__4">
+		<td>4</td>
+		<td class="nama_student">Windi Herlita Vidila</td>
+		<td class="address">Majalengka</td>
+		<td class="hapus" id="hapus__4">Hapus</td>
+	</tr>
+	<tr id="row__5">
+		<td>5</td>
+		<td class="nama_student">Firly Maharani Putri</td>
+		<td class="address">Majalengka</td>
+		<td class="hapus" id="hapus__5">Hapus</td>
+	</tr>
+	<tr id="row__6">
+		<td>6</td>
+		<td class="nama_student">Arye Fandia Kusuma</td>
+		<td class="address">Cirebon</td>
+		<td class="hapus" id="hapus__6">Hapus</td>
+	</tr>
+	<tr id="row__7">
+		<td>7</td>
+		<td class="nama_student">Jul Saputra Trimulya</td>
+		<td class="address">Kuningan</td>
+		<td class="hapus" id="hapus__7">Hapus</td>
+	</tr>
+	<tr id="row__8">
+		<td>8</td>
+		<td class="nama_student">Andin Rania</td>
+		<td class="address">Kuningan</td>
+		<td class="hapus" id="hapus__8">Hapus</td>
+	</tr>
+	<tr id="row__9">
+		<td>9</td>
+		<td class="nama_student">Harisman Haikal</td>
+		<td class="address">Majalengka</td>
+		<td class="hapus" id="hapus__9">Hapus</td>
+	</tr>
+	<tr  id="row__10">
+		<td>10</td>
+		<td class="nama_student">Hilmi Harsyadianto Fadhilah</td>
+		<td class="address">Kuningan</td>
+		<td class="hapus" id="hapus__10">Hapus</td>
+	</tr>
+</table>
+
+<script>
+	$(document).ready(function(){
+		//alert(0)
+		$('.nama_student').click(function(){
+		//alert(1)
+		let isi = $(this).text();
+		//alert(isi);
+
+		let isi2 = prompt('Ubah dengan:', isi);
+		if(!isi2) return;
+		//alert(isi2);
+
+		$(this).text(isi2);
+		})
+
+		$(document).ready(function(){
+			$('.address').click(function(){
+				//alert(1)
+				let isi = $(this).text();
+				//alert(isi);
+
+				let isi2 = prompt('Ubah dengan:', isi);
+				if(!isi2) return;
+				//alert(isi2);
+				$(this).text(isi2);
+			})
+		})
+
+
+		$('.hapus').click(function(){
+			//alert(1)
+			let yakin = confirm('Yakin Mau Menghapus?');
+			if(!yakin) return;
+
+			let id = $(this).prop('id');
+			//alert(id);
+			
+			let rid = id.split('__');
+			let baris_ke = rid[1];
+
+			//alert(baris_ke);
+
+			$('#row__'+baris_ke).slideUp()
+
+			//alert('Anda Yakin?')
+		})
+	})
+</script>
