@@ -1,0 +1,29 @@
+body{
+    padding: 50px;
+    background-color: lightblue;
+    font-family: Times New Roman;
+}
+img{
+    widht: 100%;
+    float: center;
+}
+
+body .hvs{
+    padding: 50px;
+    margin-left: 300px;
+    margin-right: 300px;
+    box-shadow: 0 3px 20px rgba(0, 0, 0.5);
+    background-color: white;
+}
+h1{
+    text-align: center;
+    font-size: 25px;
+    padding-top: 15px;
+}
+h2{
+    font-size: 16px;
+}
+.daftar{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
