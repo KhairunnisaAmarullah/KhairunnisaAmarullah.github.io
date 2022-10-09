@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+	<div class="klik">
+		<div class="klik2">
+			<h1 class="nama">Khairunnisa Amarullah</h1>
+			<ul>
+			<li><a href="#home" class="aktif">Home</a>
+			</li>
+			<li>
+				<a href="#about_me" class>About</a>
+			</li>
+			<li>
+				<a href="#tugas" class>Tugas</a>
+			</li>
+			<li>
+				<a href="#contact" class>Contact</a>
+			</li>
+			</ul>
+		</div>
+	</div>
+	<div id="button" style>
+		<div id="untukkonten">
+			<div id="home" class="isi__1" style>
+				<center>
+					<p>Hallo Nama saya icaa salam kenal: </p>
+				</center>
+			</div>
+			<div id="about_me" class="isi__2" style="display: none;">
+				<center>
+					<img src="cantik.jpeg" style="border-radius: 50px; width: 150px;" >
+					<h3>Khairunnisa Amarullah</h3>
+					<br>
+					<div class="saya">41215533</div>
+					<br>
+					<div class="saya">Tehnik Informatika</div>
+				</center>
+				<br>
+				<br>
+				<h4>Tentang saya</h4>
+				<p>Hallo namaku icaa aku mahasiswi di STMIK IKMI Cirebon, Program study Teknik Informatika</p>
+			</div>
+			<div id="tugas" class="isi__3" style="display: none;">
+				<center>
+					<h2>pemrograman web</h2>
+					<ul id="list">
+						<li><a href="https://KhairunnisaAmarullah.github.io"></a></li>
+					</ul>
+				</center>
+			</div>
+			<div id="contact" class="isi__4" style="display: none;">
+				<center>
+					<p>
+						Hubungi saya
+						<br>
+						<a href="https://www.instagram.com/accounts/edit/?hl=en">ig:khairunnisaamrllh_</a>
+					</p>
+				</center>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">
+		
+	$(document).ready(function(){
+	var currentSection=0;
+	$('#button').hide();
+	$('ul li a').click(function(){
+		$('ul li a').removeClass('aktif');
+		$(this).addClass('aktif');
+
+		var href = $(this).attr('href');
+		$('#untukkonten>div').hide();
+
+		$(href).show();
+
+		if(currentSection == 0){
+			$('#button').slideToggle();
+			currentSection = href;
+		}else if(currentSection == href){
+			$('#button').slideToggle();
+			currentSection = 0;
+		}else{
+			currentSection = href;
+		}
+		return false;
+	});
+});
+
+	</script>
+</body>
+</html>
