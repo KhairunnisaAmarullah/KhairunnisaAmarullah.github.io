@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ica_style.sheet.css">
+    <title>Jquery Effects-Sliding</title>
+</head>
+<body>
+    <div class="processor">
+        <div align="center" class="mouse">My Profile!</div>
+        <div class="keyboard">
+            <img src="ica.jpeg">
+            <h2 align="center" class="nama">Khairunnisa Amarullah</h2>
+            <p align="center">Hallo, saya Khairunnisa Amarullah, biasa di panggil icaa Saat ini, saya mahasiswa STMIK IKMI CIREBON, daerah majasem, Jl. Perjuangan. Alamat saya berada di Kota Kuningan dan saya mengambil program studi S1 Teknik Informatika, saya dari kelas TI-KIP-P7. Sekian dulu yaa perkenalannyaa. Terimakasihh. See u >< </p>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        $(document).ready(function(){
+    $(".mouse").click(function(){
+        $(".keyboard").slideToggle("slow");
+    });
+});
+    </script>
+</body>
+</html>

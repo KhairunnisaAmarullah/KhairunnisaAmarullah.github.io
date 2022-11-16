@@ -1,0 +1,50 @@
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+    width: 100px;
+    border-radius: 40px;
+    box-shadow: 1px 1px 4px rgb(197, 53, 77);
+    padding: 10px;
+    transition: 0.2s;
+    margin-bottom: 10px;
+}
+.mouse{
+    font-family: Times New Roman;
+    font-style: rgb(207, 71, 94);
+    font-size: 30px;
+    padding: 15px 20px;
+    font-weight: bold;
+    border-radius: 4px;
+    transition: 0.5s;
+    color: black;
+    cursor: pointer;
+    box-shadow: 5px 10px 16px 0px rgb(0 0 0 / 20%);
+    background-color: rgb(193, 218, 218);
+}
+.nama{
+    font-family: Cambria;
+    font-size: 25px;
+    cursor: pointer;
+}
+p{
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: auto;
+    margin-inline-end: auto;
+    cursor: pointer;
+}
+body{
+    display: block;
+    margin: 8px;
+    background-color: pink;
+}
+.processor{
+    margin: 8px 15px;
+}
+.keyboard{
+    box-shadow: 5px 10px 16px 0px rgb(0 0 0 / 20%);
+    background-color: rgb(196, 183, 183);
+}
