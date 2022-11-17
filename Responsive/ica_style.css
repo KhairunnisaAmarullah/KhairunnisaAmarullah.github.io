@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(bg.webp);
+    width: 100%;
+}
+
+.pembungkus {
+    width: 90%;
+    margin: auto;
+    padding: 20px;
+}
+
+/* header */
+.header {
+    width: 100%;
+}
+/* akhir header */
+
+/* formulir */
+h1 {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 30px;
+    font-family: "Trirong", sans-serif;
+    color: rgb(88, 25, 35)
+    text-shadow: -2px -3px 8px rgba(0,0,0,0.6);
+}
+
+.petunjuk {
+    font-weight: bold;
+    font-size: 20px;
+    font-family: "Trirong", sans-serif;
+    color: black
+    text-shadow: -2px -3px 8px rgba(0,0,0,0.6);
+}
+
+ol li {
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 20px;
+    font-family: "Trirong", sans-serif;
+    color: black
+}
+
+/* pembungkus2 */
+.pembungkus2 {
+    width: 100%;
+    margin: auto;
+    background-color:pink;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    border-radius: 20px;
+    font-family: "Trirong", sans-serif;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.58);
+}
+/* akhir pembungkus2 */
+
+.formulir {
+    font-size: 27px;
+    margin-top: 20px;
+    text-align: center;
+    color: rgb(41, 38, 38);
+}
+
+label {
+    font-size: 17px;
+    font-weight: bold;
+    color: rgb(41, 38, 38);
+}
+
+.isi {
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.masukkan, select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+input[type=radio] {
+    margin: 20px;
+}
+
+input[type=file] {
+    background-color: #fff;
+    border: none;
+    font-size: 12px;
+    color: gray;
+}
+
+button {
+    width: 100%;
+    background-color: lightblue;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: lightpink;
+    transition: .2s;
+}
+
+/* akhir formulir */
+
+/* media query */
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    body {
+        box-sizing: border-box;
+    }
+
+    .header img{
+      width: 100%;
+    }
+
+    h1 {
+        font-size: 12px;
+    }
+
+    .petunjuk {
+        font-size: 10px;
+    }
+
+    ol li {
+        font-size: 9px;
+    }
+
+    .pembungkus2 {
+        padding: 15px;
+    }
+
+    .judulform {
+        font-size: 15px;
+    }
+
+    label {
+        font-size: 12px;
+    }
+
+    .isi {
+        font-size: 9px;
+    }
+
+    .masukkan, select { 
+        padding: 5px 10px;
+        font-size: 10px;
+    }
+
+    input[type=file] {
+        font-size: 10px;
+    }
+
+    button {
+        padding: 8px 10px;
+        margin: 8px 0;
+        cursor: pointer;
+        font-size: 10px;
+    }
+    
+}
+/* akhir media query */
