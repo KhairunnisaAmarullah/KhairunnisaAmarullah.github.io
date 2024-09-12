@@ -1,0 +1,75 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: white;
+}
+
+.main-container{
+    width: 90%;
+    background-color: white;
+    margin: auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    min-height: 400px;
+}
+
+.panel-form{
+    width: 320px;
+    background-color: aqua;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.panel-form h1{
+    border-bottom: 2px black solid;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+input[type="text"], input[type="password"] {
+    padding: 4px;
+    width: 200px;
+}
+
+input[type="submit"]{
+    padding: 5px 8px;
+    background-color: pink;
+    color: white;
+}
+
+input[type="submit"]:hover {
+    background-color: pink;
+}
+
+.form-group{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.panel-info{
+    margin-top: 20px;
+    width: 320px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    border: 1px gray solid;
+}
+
+.info-belanja, 
+.info-discount,
+.info-bayar{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    border-bottom: 2px dashed grey;
+    padding-bottom: 5px;
+}
